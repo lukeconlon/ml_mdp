@@ -46,7 +46,8 @@ def evaluate_policy(env, policy, gamma = 1.0,  n = 100):
     """
     scores = [
             run_episode(env, policy, gamma = gamma, render = False)
-            for _ in range(n)]
+            for _ in range(n)
+    ]
     return np.mean(scores)
 
 def extract_policy(v, gamma = 1.0):
@@ -90,8 +91,8 @@ if __name__ == '__main__':
         gamma = .99
         # gamma = 1.0
         optimal_v = value_iteration(env, gamma)
-        print optimal_v
+        # print optimal_v
         policy = extract_policy(optimal_v, gamma)
-        print policy
+        # print policy
         policy_score = evaluate_policy(env, policy, gamma, n=1000)
         print map + ' Policy average score = ' + str(policy_score)

@@ -8,6 +8,7 @@ from gym import wrappers
 import time
 
 import frozen_lake
+import taxi
 
 
 def run_episode(env, policy, gamma = 1.0, render = False):
@@ -27,7 +28,7 @@ def run_episode(env, policy, gamma = 1.0, render = False):
 
 
 def evaluate_policy(env, policy, gamma = 1.0, n = 100):
-    scores = [run_episode(env, policy, gamma, False) for _ in range(n)]
+    scores = [run_episode(env, policy, gamma, render=False) for _ in range(n)]
     return np.mean(scores)
 
 def extract_policy(v, gamma = 1.0):
@@ -47,11 +48,16 @@ def compute_policy_v(env, policy, gamma=1.0):
     """
     v = np.zeros(env.nS)
     eps = 1e-10
+    eps = 1e-5
     while True:
         prev_v = np.copy(v)
         for s in range(env.nS):
             policy_a = policy[s]
             v[s] = sum([p * (r + gamma * prev_v[s_]) for p, s_, r, _ in env.P[s][policy_a]])
+        # print "diff: ".format(np.fabs(prev_v - v))
+        print "prev_v: {}".format(prev_v)
+        print "v: {}".format(v)
+        print np.sum((np.fabs(prev_v - v)))
         if (np.sum((np.fabs(prev_v - v))) <= eps):
             # value converged
             break
@@ -60,7 +66,7 @@ def compute_policy_v(env, policy, gamma=1.0):
 def policy_iteration(env, gamma = 1.0):
     """ Policy-Iteration algorithm """
     policy = np.random.choice(env.nA, size=(env.nS))  # initialize a random policy
-    max_iterations = 200000
+    max_iterations = 100000
     gamma = 1.0
     start_time = time.time()
     for i in range(max_iterations):
@@ -77,7 +83,7 @@ def policy_iteration(env, gamma = 1.0):
 if __name__ == '__main__':
     # env_name  = 'FrozenLake8x8-v0'
     # env = gym.make(env_name)
-    maps = ["4x4", "8x8", "16x16"]
+    maps = ["4x4"]#, "8x8", "16x16"]
     for map in maps:
         env = frozen_lake.FrozenLakeEnv(map_name=map)
         gamma = .99
@@ -85,3 +91,10 @@ if __name__ == '__main__':
         optimal_policy = policy_iteration(env, gamma=gamma)
         scores = evaluate_policy(env, optimal_policy, gamma=gamma)
         print map + ' Average scores = ' + str(np.mean(scores))
+    #
+    # env = taxi.TaxiEnv()
+    # # env = gym.make('Taxi-v2')
+    # gamma = .99
+    # optimal_policy = policy_iteration(env, gamma=gamma)
+    # scores = evaluate_policy(env, optimal_policy, gamma=gamma, n=50)
+    # print map + ' Average scores = ' + str(np.mean(scores))
