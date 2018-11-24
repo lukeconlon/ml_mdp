@@ -44,7 +44,7 @@ def evaluate_rewards_and_transitions(problem, mutate=False):
     return R, T
 
 @timing
-def value_iteration(problem, R=None, T=None, gamma=GAMMA, max_iterations=MAX_ITERATIONS, delta=DELTA):
+def value_iteration(problem, environment_name, R=None, T=None, gamma=GAMMA, max_iterations=MAX_ITERATIONS, delta=DELTA):
     """ Runs Value Iteration on a gym problem """
     value_fn = np.zeros(problem.observation_space.n)
     if R is None or T is None:
@@ -71,7 +71,8 @@ def value_iteration(problem, R=None, T=None, gamma=GAMMA, max_iterations=MAX_ITE
     plt.title('Value Iteration Convergence')
     plt.xlabel('Iterations')
     plt.ylabel('Deltas')
-    plt.show()
+    plt.savefig('figs/VI_conv_{}.png'.format(environment_name))
+    # plt.show()
     plt.clf()
 
     # Graph values
@@ -84,7 +85,8 @@ def value_iteration(problem, R=None, T=None, gamma=GAMMA, max_iterations=MAX_ITE
     plt.title('VI: Value Improvements')
     plt.xlabel('Iterations')
     plt.ylabel('Values')
-    plt.show()
+    plt.savefig('figs/VI_val_{}.png'.format(environment_name))
+    # plt.show()
     plt.clf()
 
     # Get and return optimal policy
@@ -98,7 +100,7 @@ def encode_policy(policy, shape):
     return encoded_policy
 
 @timing
-def policy_iteration(problem, R=None, T=None, gamma=GAMMA, max_iterations=MAX_ITERATIONS, delta=DELTA):
+def policy_iteration(problem, environment_name, R=None, T=None, gamma=GAMMA, max_iterations=MAX_ITERATIONS, delta=DELTA):
     """ Runs Policy Iteration on a gym problem """
     num_spaces = problem.observation_space.n
     num_actions = problem.action_space.n
@@ -142,7 +144,8 @@ def policy_iteration(problem, R=None, T=None, gamma=GAMMA, max_iterations=MAX_IT
     plt.title('Policy Iteration Convergence')
     plt.xlabel('Iterations')
     plt.ylabel('Deltas')
-    plt.show()
+    plt.savefig('figs/PI_conv_{}.png'.format(environment_name))
+    # plt.show()
     plt.clf()
 
     # Graph values
@@ -155,7 +158,8 @@ def policy_iteration(problem, R=None, T=None, gamma=GAMMA, max_iterations=MAX_IT
     plt.title('PI: Value Improvements')
     plt.xlabel('Iterations')
     plt.ylabel('Values')
-    plt.show()
+    plt.savefig('figs/PI_val_{}.png'.format(environment_name))
+    # plt.show()
     plt.clf()
 
     # Return optimal policy
@@ -173,7 +177,7 @@ def run_discrete(environment_name, mapping, shape=None):
     print
 
     print '== Value Iteration =='
-    value_policy, iters = value_iteration(problem)
+    value_policy, iters = value_iteration(problem, environment_name)
     print 'Iterations:', iters
     print 'Policy: ', value_policy
     print
@@ -184,7 +188,7 @@ def run_discrete(environment_name, mapping, shape=None):
         print
 
     print '== Policy Iteration =='
-    policy, iters = policy_iteration(problem)
+    policy, iters = policy_iteration(problem, environment_name)
     print 'Iterations:', iters
     print 'Policy: ', policy
     print
