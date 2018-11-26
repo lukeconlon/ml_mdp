@@ -1,6 +1,7 @@
 import gym
 import os
 import numpy as np
+import time
 
 import matplotlib.pyplot as plt
 import sys
@@ -20,9 +21,10 @@ iterations = []
 # discount = 0.99
 # episodes = 1000
 
+time1 = time.time()
+
 def choose_action(state):
-    action = 0
-    if np.random.uniform(0, 1) < EPSILON:
+    if np.random.uniform(0, 1) < .15:
         action = env.action_space.sample()
     else:
         action = np.argmax(Q[state, :])
@@ -42,8 +44,10 @@ for episode in xrange(EPISODES):
             break
 
         current = state
-        # action = np.argmax(Q[current, :] + np.random.randn(1, env.action_space.n) * (1 / float(episode + 1)))
-        action = choose_action(state=state)
+        # Decreasing Exploration
+        action = np.argmax(Q[current, :] + np.random.randn(1, env.action_space.n) * (1 / float(episode + 1)))
+        # Constant Exploration
+        # action = choose_action(state=state)
         state, reward, done, info = env.step(action)
         t_reward += reward
         Q[current, action] += ALPHA * (reward + GAMMA * np.max(Q[state, :]) - Q[current, action])
@@ -53,7 +57,8 @@ for episode in xrange(EPISODES):
 
 # Close environment
 env.close()
-
+time2 = time.time()
+print 'Taxi Q learning took %0.3f ms' % ((time2-time1)*1000.0)
 # Plot results
 def chunk_list(l, n):
     for i in range(0, len(l), n):
@@ -64,8 +69,8 @@ chunks = list(chunk_list(rewards, size))
 averages = [sum(chunk) / len(chunk) for chunk in chunks]
 
 plt.plot(range(0, len(rewards), size), averages)
-plt.title('Taxi - Rewards')
+plt.title('Taxi Rewards: decreasing exploration')
 plt.xlabel('Episode')
 plt.ylabel('Average Reward')
-plt.savefig('figs/qlearn_reward_taxi.png')
+plt.savefig('figs/qlearn_reward_taxi_decr.png')
 # plt.show()

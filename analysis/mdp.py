@@ -62,13 +62,13 @@ def value_iteration(problem, environment_name, R=None, T=None, gamma=GAMMA, max_
 
 
     # Graph convergence
-    x_axis = np.arange(0, max_iterations, 10000)
+    x_axis = np.arange(1, i+1)
     if deltas.shape[0] < x_axis.shape[0]:
         x_axis = x_axis[:deltas.shape[0]]
     elif deltas.shape[0] > x_axis.shape[0]:
         deltas = deltas[:x_axis.shape[0]]
     plt.plot(x_axis, deltas)
-    plt.title('Value Iteration Convergence')
+    plt.title('Value Iteration Convergence: ' + environment_name)
     plt.xlabel('Iterations')
     plt.ylabel('Deltas')
     plt.savefig('figs/VI_conv_{}.png'.format(environment_name))
@@ -76,13 +76,13 @@ def value_iteration(problem, environment_name, R=None, T=None, gamma=GAMMA, max_
     plt.clf()
 
     # Graph values
-    x_axis = np.arange(0, max_iterations, 10000)
+    x_axis = np.arange(1, i+1)
     if values.shape[0] < x_axis.shape[0]:
         x_axis = x_axis[:values.shape[0]]
     elif values.shape[0] > x_axis.shape[0]:
         values = values[:x_axis.shape[0]]
     plt.plot(x_axis, values)
-    plt.title('VI: Value Improvements')
+    plt.title('VI: Value Improvements: ' + environment_name)
     plt.xlabel('Iterations')
     plt.ylabel('Values')
     plt.savefig('figs/VI_val_{}.png'.format(environment_name))
@@ -135,13 +135,13 @@ def policy_iteration(problem, environment_name, R=None, T=None, gamma=GAMMA, max
             break
 
     # Graph convergence
-    x_axis = np.arange(0, max_iterations, 10000)
+    x_axis = np.arange(1, deltas.shape[0]+1)
     if deltas.shape[0] < x_axis.shape[0]:
         x_axis = x_axis[:deltas.shape[0]]
     elif deltas.shape[0] > x_axis.shape[0]:
         deltas = deltas[:x_axis.shape[0]]
     plt.plot(x_axis, deltas)
-    plt.title('Policy Iteration Convergence')
+    plt.title('Policy Iteration Convergence: ' + environment_name)
     plt.xlabel('Iterations')
     plt.ylabel('Deltas')
     plt.savefig('figs/PI_conv_{}.png'.format(environment_name))
@@ -149,13 +149,13 @@ def policy_iteration(problem, environment_name, R=None, T=None, gamma=GAMMA, max
     plt.clf()
 
     # Graph values
-    x_axis = np.arange(0, max_iterations, 10000)
+    x_axis = np.arange(1, deltas.shape[0] + 1)
     if values.shape[0] < x_axis.shape[0]:
         x_axis = x_axis[:values.shape[0]]
     elif values.shape[0] > x_axis.shape[0]:
         values = values[:x_axis.shape[0]]
     plt.plot(x_axis, values)
-    plt.title('PI: Value Improvements')
+    plt.title('PI: Value Improvements: ' + environment_name)
     plt.xlabel('Iterations')
     plt.ylabel('Values')
     plt.savefig('figs/PI_val_{}.png'.format(environment_name))

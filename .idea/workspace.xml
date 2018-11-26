@@ -2,9 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f257abfb-ba69-4baf-9b60-5a186dc16ae5" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/analysis/mdp.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/mdp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/PI_conv_FrozenLake-v0.png" beforeDir="false" afterPath="$PROJECT_DIR$/figs/PI_conv_FrozenLake-v0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/PI_conv_FrozenLake8x8-v0.png" beforeDir="false" afterPath="$PROJECT_DIR$/figs/PI_conv_FrozenLake8x8-v0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/PI_conv_Taxi-v2.png" beforeDir="false" afterPath="$PROJECT_DIR$/figs/PI_conv_Taxi-v2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/PI_val_FrozenLake-v0.png" beforeDir="false" afterPath="$PROJECT_DIR$/figs/PI_val_FrozenLake-v0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/PI_val_FrozenLake8x8-v0.png" beforeDir="false" afterPath="$PROJECT_DIR$/figs/PI_val_FrozenLake8x8-v0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/PI_val_Taxi-v2.png" beforeDir="false" afterPath="$PROJECT_DIR$/figs/PI_val_Taxi-v2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/VI_conv_FrozenLake-v0.png" beforeDir="false" afterPath="$PROJECT_DIR$/figs/VI_conv_FrozenLake-v0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/VI_conv_FrozenLake8x8-v0.png" beforeDir="false" afterPath="$PROJECT_DIR$/figs/VI_conv_FrozenLake8x8-v0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/VI_conv_Taxi-v2.png" beforeDir="false" afterPath="$PROJECT_DIR$/figs/VI_conv_Taxi-v2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/VI_val_FrozenLake-v0.png" beforeDir="false" afterPath="$PROJECT_DIR$/figs/VI_val_FrozenLake-v0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/VI_val_FrozenLake8x8-v0.png" beforeDir="false" afterPath="$PROJECT_DIR$/figs/VI_val_FrozenLake8x8-v0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/VI_val_Taxi-v2.png" beforeDir="false" afterPath="$PROJECT_DIR$/figs/VI_val_Taxi-v2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/qlearn_reward_frozen_lake.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figs/qlearn_reward_taxi.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frozen_lake/q_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/q_learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/policy_iteration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_2.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/taxi/q_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/taxi/q_learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/value_iteration.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,23 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="q_learning.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="q_learning.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frozen_lake/q_learning.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="41" column="28" lean-forward="true" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="q_learning.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taxi/q_learning.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="22" selection-start-line="22" selection-end-line="28" selection-end-column="17" />
+            <state relative-caret-position="386">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -42,8 +52,8 @@
       <file leaf-file-name="mdp.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analysis/mdp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="137" column="39" selection-start-line="137" selection-start-column="39" selection-end-line="137" selection-end-column="39" />
+            <state relative-caret-position="-1790">
+              <caret line="69" column="28" lean-forward="true" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -51,11 +61,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="q_learning.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/q_learning.py">
+      <file leaf-file-name="README.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-244">
-              <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="q_learning.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taxi/q_learning.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -85,13 +104,14 @@
       <find>env =</find>
       <find>epsilon</find>
       <find>na</find>
-      <find>print</find>
       <find>max_itera</find>
       <find>reward</find>
       <find>&lt;</find>
       <find>env</find>
       <find>format</find>
       <find>render</find>
+      <find>iterations</find>
+      <find>print</find>
       <find>folder</find>
     </findStrings>
   </component>
@@ -109,9 +129,10 @@
         <option value="$PROJECT_DIR$/policy_iteration.py" />
         <option value="$PROJECT_DIR$/q_learning.py" />
         <option value="$PROJECT_DIR$/parameters.py" />
-        <option value="$PROJECT_DIR$/taxi/q_learning.py" />
         <option value="$PROJECT_DIR$/analysis/mdp.py" />
+        <option value="$PROJECT_DIR$/taxi/q_learning.py" />
         <option value="$PROJECT_DIR$/frozen_lake/q_learning.py" />
+        <option value="$PROJECT_DIR$/README.txt" />
       </list>
     </option>
   </component>
@@ -126,7 +147,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="338" />
-    <option name="y" value="23" />
+    <option name="y" value="22" />
     <option name="width" value="942" />
     <option name="height" value="712" />
   </component>
@@ -156,26 +177,6 @@
             <path>
               <item name="ml_mdp" type="b2602c69:ProjectViewProjectNode" />
               <item name="ml_mdp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ml_mdp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ml_mdp" type="462c0819:PsiDirectoryNode" />
-              <item name="analysis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ml_mdp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ml_mdp" type="462c0819:PsiDirectoryNode" />
-              <item name="figs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ml_mdp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ml_mdp" type="462c0819:PsiDirectoryNode" />
-              <item name="frozen_lake" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ml_mdp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ml_mdp" type="462c0819:PsiDirectoryNode" />
-              <item name="taxi" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -224,7 +225,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="338" y="23" width="942" height="712" extended-state="0" />
+    <frame x="338" y="22" width="942" height="712" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -288,26 +289,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/value_iteration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="81" column="12" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
-          <folding>
-            <element signature="e#114#132#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frozen_lake.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1474">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/policy_iteration.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -353,23 +334,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parameters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/160944109/numpy/random/mtrand.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-333">
-          <caret line="2064" column="4" selection-start-line="2064" selection-start-column="4" selection-end-line="2064" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/figs/qlearn_reward_taxi.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/gym/envs/registration.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-234">
@@ -377,20 +341,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/analysis/mdp.py">
+    <entry file="file://$PROJECT_DIR$/figs/VI_conv_FrozenLake8x8-v0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figs/PI_conv_FrozenLake-v0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figs/PI_val_Taxi-v2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figs/PI_val_FrozenLake-v0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figs/PI_conv_Taxi-v2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figs/PI_val_FrozenLake8x8-v0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figs/VI_val_FrozenLake8x8-v0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figs/PI_conv_FrozenLake8x8-v0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figs/qlearn_reward_taxi.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figs/qlearn_reward_frozen_lake.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/160944109/numpy/random/mtrand.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="137" column="39" selection-start-line="137" selection-start-column="39" selection-end-line="137" selection-end-column="39" />
+        <state relative-caret-position="-372">
+          <caret line="2064" column="4" selection-start-line="2064" selection-start-column="4" selection-end-line="2064" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figs/qlearn_reward_taxi_decr.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parameters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figs/qlearn_reward_taxi_const.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figs/qlearn_reward_frozen_lake_const.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen_lake/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen_lake/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q_learning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="24" selection-end-column="21" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/q_learning.py">
+    <entry file="file://$PROJECT_DIR$/value_iteration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="24" selection-end-column="21" />
+        <state relative-caret-position="242">
+          <caret line="81" column="12" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+          <folding>
+            <element signature="e#114#132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen_lake.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/mdp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1790">
+          <caret line="69" column="28" lean-forward="true" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen_lake/q_learning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -399,24 +459,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/taxi/q_learning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="22" selection-start-line="22" selection-end-line="28" selection-end-column="17" />
+        <state relative-caret-position="145">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/figs/qlearn_reward_frozen_lake.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frozen_lake/q_learning.py">
+    <entry file="file://$PROJECT_DIR$/README.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="41" column="28" lean-forward="true" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
